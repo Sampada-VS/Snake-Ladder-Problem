@@ -22,6 +22,8 @@ public class SnakeLadder {
 			}
 			if (playerPosition < 0)
 				playerPosition = 0;
+			if (playerPosition > 100)
+				playerPosition = playerPosition - diceNum;
 		}
 		System.out.println("Player wins with position :"+playerPosition);
 	}
